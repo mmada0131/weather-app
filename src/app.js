@@ -4,7 +4,6 @@ const hbs=require('hbs')
 const getgeocode=require('./utils/geocode.js')
 const gettemperature=require('./utils/forecast.js')
 
-//console.log(__dirname)
 //console.log(path.join(__dirname,'../public'))
 const publicpath=path.join(__dirname,'../public')
 const viewpath=path.join(__dirname,'../templates/views')
