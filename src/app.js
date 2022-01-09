@@ -4,6 +4,8 @@ const hbs=require('hbs')
 const getgeocode=require('./utils/geocode.js')
 const gettemperature=require('./utils/forecast.js')
 
+const port=process.env.PORT || 3000
+
 //console.log(path.join(__dirname,'../public'))
 const publicpath=path.join(__dirname,'../public')
 const viewpath=path.join(__dirname,'../templates/views')
@@ -97,6 +99,6 @@ app.get('*',(req,res) =>{
     })
 })
 
-app.listen(3000,() => {
-    console.log('Server Started!')
+app.listen(port,() => {
+    console.log('Server Started!' + port)
 })
